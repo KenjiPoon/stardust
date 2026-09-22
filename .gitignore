@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+*.key
+credentials.*
+secrets.*
+.claude/
+.codex/
+work/
+*.log

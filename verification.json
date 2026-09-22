@@ -1,0 +1,208 @@
+{
+  "logic_tests": {
+    "passed": 6,
+    "command": "node --test tests/*.test.mjs"
+  },
+  "browser": {
+    "results": [
+      {
+        "name": "mouse-follow-pinch-single-burst",
+        "pass": true
+      },
+      {
+        "name": "preview-hide-show",
+        "pass": true
+      },
+      {
+        "name": "fullscreen-enter-exit",
+        "pass": true
+      },
+      {
+        "name": "compact-layout-no-overflow",
+        "pass": true
+      },
+      {
+        "name": "camera-error-NotAllowedError",
+        "pass": true
+      },
+      {
+        "name": "camera-error-NotReadableError",
+        "pass": true
+      },
+      {
+        "name": "camera-error-NotFoundError",
+        "pass": true
+      },
+      {
+        "name": "real-hand-photo-through-live-worker",
+        "pass": true,
+        "state": {
+          "mode": "camera",
+          "phase": "follow",
+          "burstCount": 0,
+          "particles": 800,
+          "fps": 60,
+          "workerActive": true,
+          "cameraActive": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "state": "live"
+            }
+          ],
+          "delegate": "GPU",
+          "inferenceMs": 382,
+          "handDetected": true,
+          "previewVisible": true
+        }
+      },
+      {
+        "name": "sustained-performance-30s",
+        "pass": true,
+        "fps": [
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60
+        ],
+        "inferenceMs": [
+          15,
+          20,
+          17,
+          21,
+          20,
+          21,
+          25,
+          29,
+          16,
+          18,
+          27,
+          16,
+          22,
+          22,
+          19
+        ],
+        "particles": 800
+      },
+      {
+        "name": "real-image-hand-lost",
+        "pass": true
+      },
+      {
+        "name": "real-image-hand-recovered",
+        "pass": true
+      },
+      {
+        "name": "stop-releases-track-worker-and-fixture",
+        "pass": true
+      },
+      {
+        "name": "cold-reload-external-network-blocked",
+        "pass": true,
+        "externalRequests": []
+      },
+      {
+        "name": "missing-model-cleanup-and-message",
+        "pass": true
+      },
+      {
+        "name": "mouse-works-after-model-failure",
+        "pass": true
+      },
+      {
+        "name": "no-uncaught-page-errors",
+        "pass": true
+      }
+    ],
+    "errors": []
+  },
+  "lifecycle": [
+    {
+      "name": "real-photo-movement-mirrored",
+      "pass": true
+    },
+    {
+      "name": "cancel-start-releases-resources",
+      "pass": true
+    },
+    {
+      "name": "offline-worker-with-local-shutdown-channel",
+      "pass": true
+    },
+    {
+      "name": "shutdown-rejects-invalid-token",
+      "pass": true
+    },
+    {
+      "name": "stop-command-releases-browser-camera-worker",
+      "pass": true
+    }
+  ],
+  "final": [
+    {
+      "name": "automatic-reduction-under-forced-low-frame-rate",
+      "pass": true,
+      "state": {
+        "mode": "idle",
+        "phase": "idle",
+        "position": {
+          "x": 0.55,
+          "y": 0.46
+        },
+        "burstCount": 0,
+        "particles": 400,
+        "fps": 20,
+        "workerActive": false,
+        "cameraActive": false,
+        "tracks": [],
+        "delegate": null,
+        "inferenceMs": 0,
+        "handDetected": false,
+        "previewVisible": true
+      }
+    },
+    {
+      "name": "actual-physical-camera-attempt",
+      "verified": true,
+      "state": {
+        "mode": "camera",
+        "phase": "idle",
+        "position": {
+          "x": 0.55,
+          "y": 0.46
+        },
+        "burstCount": 0,
+        "particles": 800,
+        "fps": 59,
+        "workerActive": true,
+        "cameraActive": true,
+        "tracks": [
+          {
+            "kind": "video",
+            "state": "live"
+          }
+        ],
+        "delegate": "GPU",
+        "inferenceMs": 0,
+        "handDetected": false,
+        "previewVisible": true
+      },
+      "notice": ""
+    },
+    {
+      "name": "final-render-and-mouse-burst",
+      "pass": true
+    }
+  ]
+}
