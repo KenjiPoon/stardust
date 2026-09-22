@@ -1,0 +1,191 @@
+{
+  "date": "2026-09-22",
+  "url": "https://kenjipoon.github.io/stardust/",
+  "tested_application_commit": "faa6beb341371d4247c9d924b16c83d6b75b1086",
+  "static_subpath": {
+    "base": "http://127.0.0.1:43150/stardust/",
+    "results": [
+      {
+        "name": "mouse-pinch-and-single-burst",
+        "pass": true
+      },
+      {
+        "name": "preview-hide-show",
+        "pass": true
+      },
+      {
+        "name": "fullscreen",
+        "pass": true
+      },
+      {
+        "name": "actual-hand-model-without-isolation-headers",
+        "pass": true,
+        "state": {
+          "mode": "camera",
+          "phase": "follow",
+          "position": {
+            "x": 0.42382081182248826,
+            "y": 0.5616243572378313
+          },
+          "burstCount": 1,
+          "particles": 800,
+          "fps": 60,
+          "workerActive": true,
+          "cameraActive": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "state": "live"
+            }
+          ],
+          "delegate": "GPU",
+          "inferenceMs": 30,
+          "handDetected": true,
+          "previewVisible": true
+        }
+      },
+      {
+        "name": "hand-loss-and-recovery",
+        "pass": true
+      },
+      {
+        "name": "stop-releases-camera-and-worker",
+        "pass": true
+      },
+      {
+        "name": "all-resources-from-project-path-no-local-server-channel",
+        "pass": true,
+        "requests": 12
+      }
+    ],
+    "errors": [],
+    "failed": [],
+    "requests": [
+      "http://127.0.0.1:43150/stardust/",
+      "http://127.0.0.1:43150/stardust/style.css",
+      "http://127.0.0.1:43150/stardust/src/app.js",
+      "http://127.0.0.1:43150/stardust/src/particles.js",
+      "http://127.0.0.1:43150/stardust/src/gestures.js",
+      "http://127.0.0.1:43150/stardust/__health",
+      "http://127.0.0.1:43150/stardust/icon.svg",
+      "http://127.0.0.1:43150/stardust/src/hand-worker.js",
+      "http://127.0.0.1:43150/stardust/vendor/mediapipe/vision_bundle.mjs",
+      "http://127.0.0.1:43150/stardust/vendor/mediapipe/wasm//vision_wasm_module_internal.js",
+      "http://127.0.0.1:43150/stardust/vendor/mediapipe/wasm//vision_wasm_module_internal.wasm",
+      "http://127.0.0.1:43150/stardust/models/hand_landmarker.task"
+    ]
+  },
+  "github_pages": {
+    "base": "https://kenjipoon.github.io/stardust/",
+    "results": [
+      {
+        "name": "mouse-pinch-and-single-burst",
+        "pass": true
+      },
+      {
+        "name": "preview-hide-show",
+        "pass": true
+      },
+      {
+        "name": "fullscreen",
+        "pass": true
+      },
+      {
+        "name": "actual-hand-model-without-isolation-headers",
+        "pass": true,
+        "state": {
+          "mode": "camera",
+          "phase": "follow",
+          "position": {
+            "x": 0.42392139599254064,
+            "y": 0.5617361170829228
+          },
+          "burstCount": 1,
+          "particles": 800,
+          "fps": 60,
+          "workerActive": true,
+          "cameraActive": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "state": "live"
+            }
+          ],
+          "delegate": "GPU",
+          "inferenceMs": 18,
+          "handDetected": true,
+          "previewVisible": true
+        }
+      },
+      {
+        "name": "hand-loss-and-recovery",
+        "pass": true
+      },
+      {
+        "name": "stop-releases-camera-and-worker",
+        "pass": true
+      },
+      {
+        "name": "all-resources-from-project-path-no-local-server-channel",
+        "pass": true,
+        "requests": 11
+      }
+    ],
+    "errors": [],
+    "failed": [],
+    "requests": [
+      "https://kenjipoon.github.io/stardust/",
+      "https://kenjipoon.github.io/stardust/style.css",
+      "https://kenjipoon.github.io/stardust/src/app.js",
+      "https://kenjipoon.github.io/stardust/src/particles.js",
+      "https://kenjipoon.github.io/stardust/src/gestures.js",
+      "https://kenjipoon.github.io/stardust/icon.svg",
+      "https://kenjipoon.github.io/stardust/src/hand-worker.js",
+      "https://kenjipoon.github.io/stardust/vendor/mediapipe/vision_bundle.mjs",
+      "https://kenjipoon.github.io/stardust/vendor/mediapipe/wasm//vision_wasm_module_internal.js",
+      "https://kenjipoon.github.io/stardust/vendor/mediapipe/wasm//vision_wasm_module_internal.wasm",
+      "https://kenjipoon.github.io/stardust/models/hand_landmarker.task"
+    ]
+  },
+  "deployed_assets": [
+    {
+      "path": "index.html",
+      "status": "HTTP/2 200 ",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 5306,
+      "sha256_matches": true
+    },
+    {
+      "path": "src/app.js",
+      "status": "HTTP/2 200 ",
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 10728,
+      "sha256_matches": true
+    },
+    {
+      "path": "src/hand-worker.js",
+      "status": "HTTP/2 200 ",
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": 1496,
+      "sha256_matches": true
+    },
+    {
+      "path": "vendor/mediapipe/wasm/vision_wasm_module_internal.wasm",
+      "status": "HTTP/2 200 ",
+      "content_type": "application/wasm",
+      "bytes": 11756972,
+      "sha256_matches": true
+    },
+    {
+      "path": "models/hand_landmarker.task",
+      "status": "HTTP/2 200 ",
+      "content_type": "application/octet-stream",
+      "bytes": 7819105,
+      "sha256_matches": true
+    }
+  ],
+  "limitations": [
+    "Camera stream in these tests used an official real-hand photograph, not a person performing gestures live.",
+    "Physical camera access was verified separately for the local version; live human gesture sequence remains unverified."
+  ]
+}
